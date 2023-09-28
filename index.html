@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LIST</title>
+    <!--link css and javascript-->
+    <link href="./styles.css" rel="stylesheet" />
+
+    <!--
+        features:
+            - adding items
+            - checking off items
+            - clearing the list
+    -->
+
+</head>
+<body>
+        <div class="topnav">
+        <center>
+            <h1>To-Do List</h1>
+        </center>
+    </div>
+    <div class="border">
+        <div class="container">
+            <div id="adding-task">
+                <input id="input-box" type="text" placeholder="feel free to add your tasks here :)">
+                <button class="button" id="add-button" onclick="emptyTask()">add task</button>
+            </div>
+        </div>
+        <div class="submitted-tasks">
+            <ul id="submitted"></ul>
+            <!--the submitted tasks would go here -->
+            <!-- <div id="within-seven days"></div>
+            <div id="within-fourteen-days"></div>
+            <div id="many-days"></div> -->
+            <button class="button" id="clear-button">clear list</button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+<footer>
+    <p>created by nicole martinez - mentored fa'23</p>
+</footer>
+</html>
